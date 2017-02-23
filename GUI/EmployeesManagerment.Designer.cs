@@ -47,7 +47,7 @@
             this.tabControl1.Location = new System.Drawing.Point(-1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(743, 429);
+            this.tabControl1.Size = new System.Drawing.Size(774, 449);
             this.tabControl1.TabIndex = 0;
             // 
             // emplTab
@@ -55,7 +55,7 @@
             this.emplTab.Location = new System.Drawing.Point(4, 22);
             this.emplTab.Name = "emplTab";
             this.emplTab.Padding = new System.Windows.Forms.Padding(3);
-            this.emplTab.Size = new System.Drawing.Size(735, 403);
+            this.emplTab.Size = new System.Drawing.Size(766, 423);
             this.emplTab.TabIndex = 0;
             this.emplTab.Text = "Nhân viên";
             this.emplTab.UseVisualStyleBackColor = true;
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 427);
+            this.ClientSize = new System.Drawing.Size(772, 449);
             this.Controls.Add(this.tabControl1);
             this.Name = "EmployeesManagerment";
             this.Text = "Quản lý nhân sự";
