@@ -1390,14 +1390,14 @@
             // 
             // NgayBD
             // 
-            this.NgayBD.DataPropertyName = "ngayBD";
+            this.NgayBD.DataPropertyName = "ngayBatDau";
             this.NgayBD.HeaderText = "Ngay BD";
             this.NgayBD.Name = "NgayBD";
             this.NgayBD.ReadOnly = true;
             // 
             // NgayKT
             // 
-            this.NgayKT.DataPropertyName = "ngayKT";
+            this.NgayKT.DataPropertyName = "ngayKetThuc";
             this.NgayKT.HeaderText = "Ngay KT";
             this.NgayKT.Name = "NgayKT";
             this.NgayKT.ReadOnly = true;
