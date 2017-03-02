@@ -107,51 +107,57 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.projectEmplJoinInTable = new System.Windows.Forms.DataGridView();
-            this.projectTable = new System.Windows.Forms.DataGridView();
+            this.dgvDuAn = new System.Windows.Forms.DataGridView();
             this.violationTab = new System.Windows.Forms.TabPage();
-            this.dayOffTab = new System.Windows.Forms.TabPage();
+            this.violationButton3 = new System.Windows.Forms.Button();
+            this.violationButton2 = new System.Windows.Forms.Button();
+            this.violationButton1 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.violationDatepicker = new System.Windows.Forms.DateTimePicker();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.violationReasonTxt = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.violationEmplNameTxt = new System.Windows.Forms.TextBox();
+            this.violationEmplIdTxt = new System.Windows.Forms.TextBox();
+            this.violationIDTxt = new System.Windows.Forms.TextBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.allVioationTable = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.emplViolationStaticTable = new System.Windows.Forms.DataGridView();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.violationIDTxt = new System.Windows.Forms.TextBox();
-            this.violationEmplIdTxt = new System.Windows.Forms.TextBox();
-            this.violationEmplNameTxt = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.violationReasonTxt = new System.Windows.Forms.TextBox();
-            this.violationButton1 = new System.Windows.Forms.Button();
-            this.violationButton2 = new System.Windows.Forms.Button();
-            this.violationButton3 = new System.Windows.Forms.Button();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.violationDatepicker = new System.Windows.Forms.DateTimePicker();
+            this.dayOffTab = new System.Windows.Forms.TabPage();
+            this.dayOffButton3 = new System.Windows.Forms.Button();
+            this.dayOffButton2 = new System.Windows.Forms.Button();
+            this.dayOffButton1 = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.isPaidLeave = new System.Windows.Forms.CheckBox();
+            this.isWithPermission = new System.Windows.Forms.CheckBox();
+            this.dayOffDatepicker = new System.Windows.Forms.DateTimePicker();
+            this.dayOffReasonTxt = new System.Windows.Forms.TextBox();
+            this.dayOffEmplNameTxt = new System.Windows.Forms.TextBox();
+            this.dayOffEmplIdTxt = new System.Windows.Forms.TextBox();
+            this.dayOffIDTxt = new System.Windows.Forms.TextBox();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.allDayOffLeaveTable = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.emplDayOffStaticTable = new System.Windows.Forms.DataGridView();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.dayOffIDTxt = new System.Windows.Forms.TextBox();
-            this.dayOffEmplIdTxt = new System.Windows.Forms.TextBox();
-            this.dayOffEmplNameTxt = new System.Windows.Forms.TextBox();
-            this.dayOffReasonTxt = new System.Windows.Forms.TextBox();
-            this.dayOffDatepicker = new System.Windows.Forms.DateTimePicker();
-            this.isWithPermission = new System.Windows.Forms.CheckBox();
-            this.isPaidLeave = new System.Windows.Forms.CheckBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.dayOffButton1 = new System.Windows.Forms.Button();
-            this.dayOffButton2 = new System.Windows.Forms.Button();
-            this.dayOffButton3 = new System.Windows.Forms.Button();
+            this.Maduan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayKT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.emplTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -165,21 +171,21 @@
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.projectEmplJoinInTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDuAn)).BeginInit();
             this.violationTab.SuspendLayout();
-            this.dayOffTab.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.allVioationTable)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.emplViolationStaticTable)).BeginInit();
-            this.groupBox5.SuspendLayout();
+            this.dayOffTab.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.allDayOffLeaveTable)).BeginInit();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.emplDayOffStaticTable)).BeginInit();
-            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -634,7 +640,7 @@
             this.projectTab.Controls.Add(this.label20);
             this.projectTab.Controls.Add(this.label19);
             this.projectTab.Controls.Add(this.projectEmplJoinInTable);
-            this.projectTab.Controls.Add(this.projectTable);
+            this.projectTab.Controls.Add(this.dgvDuAn);
             this.projectTab.Location = new System.Drawing.Point(4, 22);
             this.projectTab.Name = "projectTab";
             this.projectTab.Size = new System.Drawing.Size(766, 477);
@@ -927,13 +933,23 @@
             this.projectEmplJoinInTable.Size = new System.Drawing.Size(466, 194);
             this.projectEmplJoinInTable.TabIndex = 1;
             // 
-            // projectTable
+            // dgvDuAn
             // 
-            this.projectTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.projectTable.Location = new System.Drawing.Point(288, 31);
-            this.projectTable.Name = "projectTable";
-            this.projectTable.Size = new System.Drawing.Size(466, 214);
-            this.projectTable.TabIndex = 0;
+            this.dgvDuAn.AllowUserToAddRows = false;
+            this.dgvDuAn.AllowUserToDeleteRows = false;
+            this.dgvDuAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDuAn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Maduan,
+            this.tenDA,
+            this.DiaDiem,
+            this.NgayBD,
+            this.NgayKT,
+            this.MaPB});
+            this.dgvDuAn.Location = new System.Drawing.Point(288, 31);
+            this.dgvDuAn.Name = "dgvDuAn";
+            this.dgvDuAn.ReadOnly = true;
+            this.dgvDuAn.Size = new System.Drawing.Size(466, 214);
+            this.dgvDuAn.TabIndex = 0;
             // 
             // violationTab
             // 
@@ -949,67 +965,32 @@
             this.violationTab.Text = "Vi phạm";
             this.violationTab.UseVisualStyleBackColor = true;
             // 
-            // dayOffTab
+            // violationButton3
             // 
-            this.dayOffTab.Controls.Add(this.dayOffButton3);
-            this.dayOffTab.Controls.Add(this.dayOffButton2);
-            this.dayOffTab.Controls.Add(this.dayOffButton1);
-            this.dayOffTab.Controls.Add(this.groupBox6);
-            this.dayOffTab.Controls.Add(this.tabControl3);
-            this.dayOffTab.Location = new System.Drawing.Point(4, 22);
-            this.dayOffTab.Name = "dayOffTab";
-            this.dayOffTab.Size = new System.Drawing.Size(766, 477);
-            this.dayOffTab.TabIndex = 3;
-            this.dayOffTab.Text = "Nghỉ làm";
-            this.dayOffTab.UseVisualStyleBackColor = true;
+            this.violationButton3.Location = new System.Drawing.Point(95, 375);
+            this.violationButton3.Name = "violationButton3";
+            this.violationButton3.Size = new System.Drawing.Size(80, 40);
+            this.violationButton3.TabIndex = 4;
+            this.violationButton3.Text = "button3";
+            this.violationButton3.UseVisualStyleBackColor = true;
             // 
-            // tabControl2
+            // violationButton2
             // 
-            this.tabControl2.Controls.Add(this.tabPage1);
-            this.tabControl2.Controls.Add(this.tabPage2);
-            this.tabControl2.Location = new System.Drawing.Point(261, 30);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(502, 444);
-            this.tabControl2.TabIndex = 0;
+            this.violationButton2.Location = new System.Drawing.Point(148, 312);
+            this.violationButton2.Name = "violationButton2";
+            this.violationButton2.Size = new System.Drawing.Size(80, 40);
+            this.violationButton2.TabIndex = 3;
+            this.violationButton2.Text = "button2";
+            this.violationButton2.UseVisualStyleBackColor = true;
             // 
-            // tabPage1
+            // violationButton1
             // 
-            this.tabPage1.Controls.Add(this.allVioationTable);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(494, 418);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Tất cả vi phạm";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.emplViolationStaticTable);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(494, 418);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Thống kê vi phạm của nhân viên";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // allVioationTable
-            // 
-            this.allVioationTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.allVioationTable.Location = new System.Drawing.Point(0, 0);
-            this.allVioationTable.Name = "allVioationTable";
-            this.allVioationTable.Size = new System.Drawing.Size(494, 418);
-            this.allVioationTable.TabIndex = 0;
-            // 
-            // emplViolationStaticTable
-            // 
-            this.emplViolationStaticTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.emplViolationStaticTable.Location = new System.Drawing.Point(0, 0);
-            this.emplViolationStaticTable.Name = "emplViolationStaticTable";
-            this.emplViolationStaticTable.Size = new System.Drawing.Size(494, 418);
-            this.emplViolationStaticTable.TabIndex = 0;
+            this.violationButton1.Location = new System.Drawing.Point(40, 312);
+            this.violationButton1.Name = "violationButton1";
+            this.violationButton1.Size = new System.Drawing.Size(80, 40);
+            this.violationButton1.TabIndex = 2;
+            this.violationButton1.Text = "button1";
+            this.violationButton1.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -1032,112 +1013,12 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin vi phạm";
             // 
-            // violationIDTxt
+            // violationDatepicker
             // 
-            this.violationIDTxt.Location = new System.Drawing.Point(110, 46);
-            this.violationIDTxt.Name = "violationIDTxt";
-            this.violationIDTxt.Size = new System.Drawing.Size(118, 20);
-            this.violationIDTxt.TabIndex = 0;
-            // 
-            // violationEmplIdTxt
-            // 
-            this.violationEmplIdTxt.Location = new System.Drawing.Point(110, 72);
-            this.violationEmplIdTxt.Name = "violationEmplIdTxt";
-            this.violationEmplIdTxt.Size = new System.Drawing.Size(118, 20);
-            this.violationEmplIdTxt.TabIndex = 1;
-            // 
-            // violationEmplNameTxt
-            // 
-            this.violationEmplNameTxt.Location = new System.Drawing.Point(110, 98);
-            this.violationEmplNameTxt.Name = "violationEmplNameTxt";
-            this.violationEmplNameTxt.Size = new System.Drawing.Size(118, 20);
-            this.violationEmplNameTxt.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(110, 150);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(118, 20);
-            this.textBox4.TabIndex = 3;
-            // 
-            // violationReasonTxt
-            // 
-            this.violationReasonTxt.Location = new System.Drawing.Point(110, 124);
-            this.violationReasonTxt.Name = "violationReasonTxt";
-            this.violationReasonTxt.Size = new System.Drawing.Size(118, 20);
-            this.violationReasonTxt.TabIndex = 4;
-            // 
-            // violationButton1
-            // 
-            this.violationButton1.Location = new System.Drawing.Point(40, 312);
-            this.violationButton1.Name = "violationButton1";
-            this.violationButton1.Size = new System.Drawing.Size(80, 40);
-            this.violationButton1.TabIndex = 2;
-            this.violationButton1.Text = "button1";
-            this.violationButton1.UseVisualStyleBackColor = true;
-            // 
-            // violationButton2
-            // 
-            this.violationButton2.Location = new System.Drawing.Point(148, 312);
-            this.violationButton2.Name = "violationButton2";
-            this.violationButton2.Size = new System.Drawing.Size(80, 40);
-            this.violationButton2.TabIndex = 3;
-            this.violationButton2.Text = "button2";
-            this.violationButton2.UseVisualStyleBackColor = true;
-            // 
-            // violationButton3
-            // 
-            this.violationButton3.Location = new System.Drawing.Point(95, 375);
-            this.violationButton3.Name = "violationButton3";
-            this.violationButton3.Size = new System.Drawing.Size(80, 40);
-            this.violationButton3.TabIndex = 4;
-            this.violationButton3.Text = "button3";
-            this.violationButton3.UseVisualStyleBackColor = true;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(13, 75);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(72, 13);
-            this.label31.TabIndex = 6;
-            this.label31.Text = "Mã nhân viên";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(13, 101);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(76, 13);
-            this.label32.TabIndex = 7;
-            this.label32.Text = "Tên nhân viên";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(13, 127);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(33, 13);
-            this.label33.TabIndex = 8;
-            this.label33.Text = "Lý do";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(13, 49);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(62, 13);
-            this.label34.TabIndex = 9;
-            this.label34.Text = "Mã vi phạm";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(13, 182);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(72, 13);
-            this.label35.TabIndex = 10;
-            this.label35.Text = "Ngày vi phạm";
+            this.violationDatepicker.Location = new System.Drawing.Point(110, 176);
+            this.violationDatepicker.Name = "violationDatepicker";
+            this.violationDatepicker.Size = new System.Drawing.Size(118, 20);
+            this.violationDatepicker.TabIndex = 12;
             // 
             // label36
             // 
@@ -1148,60 +1029,174 @@
             this.label36.TabIndex = 11;
             this.label36.Text = "Hình thức kỷ luật";
             // 
-            // violationDatepicker
+            // label35
             // 
-            this.violationDatepicker.Location = new System.Drawing.Point(110, 176);
-            this.violationDatepicker.Name = "violationDatepicker";
-            this.violationDatepicker.Size = new System.Drawing.Size(118, 20);
-            this.violationDatepicker.TabIndex = 12;
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(13, 182);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(72, 13);
+            this.label35.TabIndex = 10;
+            this.label35.Text = "Ngày vi phạm";
             // 
-            // tabControl3
+            // label34
             // 
-            this.tabControl3.Controls.Add(this.tabPage3);
-            this.tabControl3.Controls.Add(this.tabPage4);
-            this.tabControl3.Location = new System.Drawing.Point(275, 24);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(488, 450);
-            this.tabControl3.TabIndex = 0;
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(13, 49);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(62, 13);
+            this.label34.TabIndex = 9;
+            this.label34.Text = "Mã vi phạm";
             // 
-            // tabPage3
+            // label33
             // 
-            this.tabPage3.Controls.Add(this.allDayOffLeaveTable);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(480, 424);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "Tất cả số lần nghỉ của nhân viên";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(13, 127);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(33, 13);
+            this.label33.TabIndex = 8;
+            this.label33.Text = "Lý do";
             // 
-            // tabPage4
+            // label32
             // 
-            this.tabPage4.Controls.Add(this.emplDayOffStaticTable);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(480, 424);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "Thống kê số ngày nghỉ của nhân viên trong tháng";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(13, 101);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(76, 13);
+            this.label32.TabIndex = 7;
+            this.label32.Text = "Tên nhân viên";
             // 
-            // allDayOffLeaveTable
+            // label31
             // 
-            this.allDayOffLeaveTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.allDayOffLeaveTable.Location = new System.Drawing.Point(0, 0);
-            this.allDayOffLeaveTable.Name = "allDayOffLeaveTable";
-            this.allDayOffLeaveTable.Size = new System.Drawing.Size(480, 424);
-            this.allDayOffLeaveTable.TabIndex = 0;
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(13, 75);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(72, 13);
+            this.label31.TabIndex = 6;
+            this.label31.Text = "Mã nhân viên";
             // 
-            // emplDayOffStaticTable
+            // violationReasonTxt
             // 
-            this.emplDayOffStaticTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.emplDayOffStaticTable.Location = new System.Drawing.Point(0, 0);
-            this.emplDayOffStaticTable.Name = "emplDayOffStaticTable";
-            this.emplDayOffStaticTable.Size = new System.Drawing.Size(480, 424);
-            this.emplDayOffStaticTable.TabIndex = 0;
+            this.violationReasonTxt.Location = new System.Drawing.Point(110, 124);
+            this.violationReasonTxt.Name = "violationReasonTxt";
+            this.violationReasonTxt.Size = new System.Drawing.Size(118, 20);
+            this.violationReasonTxt.TabIndex = 4;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(110, 150);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(118, 20);
+            this.textBox4.TabIndex = 3;
+            // 
+            // violationEmplNameTxt
+            // 
+            this.violationEmplNameTxt.Location = new System.Drawing.Point(110, 98);
+            this.violationEmplNameTxt.Name = "violationEmplNameTxt";
+            this.violationEmplNameTxt.Size = new System.Drawing.Size(118, 20);
+            this.violationEmplNameTxt.TabIndex = 2;
+            // 
+            // violationEmplIdTxt
+            // 
+            this.violationEmplIdTxt.Location = new System.Drawing.Point(110, 72);
+            this.violationEmplIdTxt.Name = "violationEmplIdTxt";
+            this.violationEmplIdTxt.Size = new System.Drawing.Size(118, 20);
+            this.violationEmplIdTxt.TabIndex = 1;
+            // 
+            // violationIDTxt
+            // 
+            this.violationIDTxt.Location = new System.Drawing.Point(110, 46);
+            this.violationIDTxt.Name = "violationIDTxt";
+            this.violationIDTxt.Size = new System.Drawing.Size(118, 20);
+            this.violationIDTxt.TabIndex = 0;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage1);
+            this.tabControl2.Controls.Add(this.tabPage2);
+            this.tabControl2.Location = new System.Drawing.Point(261, 30);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(502, 444);
+            this.tabControl2.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.allVioationTable);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(494, 418);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Tất cả vi phạm";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // allVioationTable
+            // 
+            this.allVioationTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.allVioationTable.Location = new System.Drawing.Point(0, 0);
+            this.allVioationTable.Name = "allVioationTable";
+            this.allVioationTable.Size = new System.Drawing.Size(494, 418);
+            this.allVioationTable.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.emplViolationStaticTable);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(494, 418);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Thống kê vi phạm của nhân viên";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // emplViolationStaticTable
+            // 
+            this.emplViolationStaticTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.emplViolationStaticTable.Location = new System.Drawing.Point(0, 0);
+            this.emplViolationStaticTable.Name = "emplViolationStaticTable";
+            this.emplViolationStaticTable.Size = new System.Drawing.Size(494, 418);
+            this.emplViolationStaticTable.TabIndex = 0;
+            // 
+            // dayOffTab
+            // 
+            this.dayOffTab.Controls.Add(this.dayOffButton3);
+            this.dayOffTab.Controls.Add(this.dayOffButton2);
+            this.dayOffTab.Controls.Add(this.dayOffButton1);
+            this.dayOffTab.Controls.Add(this.groupBox6);
+            this.dayOffTab.Controls.Add(this.tabControl3);
+            this.dayOffTab.Location = new System.Drawing.Point(4, 22);
+            this.dayOffTab.Name = "dayOffTab";
+            this.dayOffTab.Size = new System.Drawing.Size(766, 477);
+            this.dayOffTab.TabIndex = 3;
+            this.dayOffTab.Text = "Nghỉ làm";
+            this.dayOffTab.UseVisualStyleBackColor = true;
+            // 
+            // dayOffButton3
+            // 
+            this.dayOffButton3.Location = new System.Drawing.Point(103, 392);
+            this.dayOffButton3.Name = "dayOffButton3";
+            this.dayOffButton3.Size = new System.Drawing.Size(80, 40);
+            this.dayOffButton3.TabIndex = 4;
+            this.dayOffButton3.Text = "Xóa";
+            this.dayOffButton3.UseVisualStyleBackColor = true;
+            // 
+            // dayOffButton2
+            // 
+            this.dayOffButton2.Location = new System.Drawing.Point(172, 330);
+            this.dayOffButton2.Name = "dayOffButton2";
+            this.dayOffButton2.Size = new System.Drawing.Size(80, 40);
+            this.dayOffButton2.TabIndex = 3;
+            this.dayOffButton2.Text = "Sửa";
+            this.dayOffButton2.UseVisualStyleBackColor = true;
+            // 
+            // dayOffButton1
+            // 
+            this.dayOffButton1.Location = new System.Drawing.Point(33, 330);
+            this.dayOffButton1.Name = "dayOffButton1";
+            this.dayOffButton1.Size = new System.Drawing.Size(80, 40);
+            this.dayOffButton1.TabIndex = 2;
+            this.dayOffButton1.Text = "Thêm";
+            this.dayOffButton1.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -1224,50 +1219,50 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Thông tin";
             // 
-            // dayOffIDTxt
+            // label41
             // 
-            this.dayOffIDTxt.Location = new System.Drawing.Point(111, 39);
-            this.dayOffIDTxt.Name = "dayOffIDTxt";
-            this.dayOffIDTxt.Size = new System.Drawing.Size(131, 20);
-            this.dayOffIDTxt.TabIndex = 0;
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(20, 149);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(55, 13);
+            this.label41.TabIndex = 12;
+            this.label41.Text = "Ngày nghỉ";
             // 
-            // dayOffEmplIdTxt
+            // label40
             // 
-            this.dayOffEmplIdTxt.Location = new System.Drawing.Point(111, 65);
-            this.dayOffEmplIdTxt.Name = "dayOffEmplIdTxt";
-            this.dayOffEmplIdTxt.Size = new System.Drawing.Size(131, 20);
-            this.dayOffEmplIdTxt.TabIndex = 1;
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(20, 120);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(33, 13);
+            this.label40.TabIndex = 11;
+            this.label40.Text = "Lý do";
             // 
-            // dayOffEmplNameTxt
+            // label39
             // 
-            this.dayOffEmplNameTxt.Location = new System.Drawing.Point(111, 91);
-            this.dayOffEmplNameTxt.Name = "dayOffEmplNameTxt";
-            this.dayOffEmplNameTxt.Size = new System.Drawing.Size(131, 20);
-            this.dayOffEmplNameTxt.TabIndex = 2;
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(20, 94);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(76, 13);
+            this.label39.TabIndex = 10;
+            this.label39.Text = "Tên nhân viên";
             // 
-            // dayOffReasonTxt
+            // label38
             // 
-            this.dayOffReasonTxt.Location = new System.Drawing.Point(111, 117);
-            this.dayOffReasonTxt.Name = "dayOffReasonTxt";
-            this.dayOffReasonTxt.Size = new System.Drawing.Size(131, 20);
-            this.dayOffReasonTxt.TabIndex = 3;
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(20, 68);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(72, 13);
+            this.label38.TabIndex = 9;
+            this.label38.Text = "Mã nhân viên";
             // 
-            // dayOffDatepicker
+            // label37
             // 
-            this.dayOffDatepicker.Location = new System.Drawing.Point(111, 143);
-            this.dayOffDatepicker.Name = "dayOffDatepicker";
-            this.dayOffDatepicker.Size = new System.Drawing.Size(131, 20);
-            this.dayOffDatepicker.TabIndex = 4;
-            // 
-            // isWithPermission
-            // 
-            this.isWithPermission.AutoSize = true;
-            this.isWithPermission.Location = new System.Drawing.Point(122, 178);
-            this.isWithPermission.Name = "isWithPermission";
-            this.isWithPermission.Size = new System.Drawing.Size(88, 17);
-            this.isWithPermission.TabIndex = 5;
-            this.isWithPermission.Text = "Có giấy phép";
-            this.isWithPermission.UseVisualStyleBackColor = true;
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(20, 42);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(45, 13);
+            this.label37.TabIndex = 8;
+            this.label37.Text = "Mã nghỉ";
             // 
             // isPaidLeave
             // 
@@ -1279,77 +1274,140 @@
             this.isPaidLeave.Text = "Nghỉ có lương";
             this.isPaidLeave.UseVisualStyleBackColor = true;
             // 
-            // label37
+            // isWithPermission
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(20, 42);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(45, 13);
-            this.label37.TabIndex = 8;
-            this.label37.Text = "Mã nghỉ";
+            this.isWithPermission.AutoSize = true;
+            this.isWithPermission.Location = new System.Drawing.Point(122, 178);
+            this.isWithPermission.Name = "isWithPermission";
+            this.isWithPermission.Size = new System.Drawing.Size(88, 17);
+            this.isWithPermission.TabIndex = 5;
+            this.isWithPermission.Text = "Có giấy phép";
+            this.isWithPermission.UseVisualStyleBackColor = true;
             // 
-            // label38
+            // dayOffDatepicker
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(20, 68);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(72, 13);
-            this.label38.TabIndex = 9;
-            this.label38.Text = "Mã nhân viên";
+            this.dayOffDatepicker.Location = new System.Drawing.Point(111, 143);
+            this.dayOffDatepicker.Name = "dayOffDatepicker";
+            this.dayOffDatepicker.Size = new System.Drawing.Size(131, 20);
+            this.dayOffDatepicker.TabIndex = 4;
             // 
-            // label39
+            // dayOffReasonTxt
             // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(20, 94);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(76, 13);
-            this.label39.TabIndex = 10;
-            this.label39.Text = "Tên nhân viên";
+            this.dayOffReasonTxt.Location = new System.Drawing.Point(111, 117);
+            this.dayOffReasonTxt.Name = "dayOffReasonTxt";
+            this.dayOffReasonTxt.Size = new System.Drawing.Size(131, 20);
+            this.dayOffReasonTxt.TabIndex = 3;
             // 
-            // label40
+            // dayOffEmplNameTxt
             // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(20, 120);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(33, 13);
-            this.label40.TabIndex = 11;
-            this.label40.Text = "Lý do";
+            this.dayOffEmplNameTxt.Location = new System.Drawing.Point(111, 91);
+            this.dayOffEmplNameTxt.Name = "dayOffEmplNameTxt";
+            this.dayOffEmplNameTxt.Size = new System.Drawing.Size(131, 20);
+            this.dayOffEmplNameTxt.TabIndex = 2;
             // 
-            // label41
+            // dayOffEmplIdTxt
             // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(20, 149);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(55, 13);
-            this.label41.TabIndex = 12;
-            this.label41.Text = "Ngày nghỉ";
+            this.dayOffEmplIdTxt.Location = new System.Drawing.Point(111, 65);
+            this.dayOffEmplIdTxt.Name = "dayOffEmplIdTxt";
+            this.dayOffEmplIdTxt.Size = new System.Drawing.Size(131, 20);
+            this.dayOffEmplIdTxt.TabIndex = 1;
             // 
-            // dayOffButton1
+            // dayOffIDTxt
             // 
-            this.dayOffButton1.Location = new System.Drawing.Point(33, 330);
-            this.dayOffButton1.Name = "dayOffButton1";
-            this.dayOffButton1.Size = new System.Drawing.Size(80, 40);
-            this.dayOffButton1.TabIndex = 2;
-            this.dayOffButton1.Text = "Thêm";
-            this.dayOffButton1.UseVisualStyleBackColor = true;
+            this.dayOffIDTxt.Location = new System.Drawing.Point(111, 39);
+            this.dayOffIDTxt.Name = "dayOffIDTxt";
+            this.dayOffIDTxt.Size = new System.Drawing.Size(131, 20);
+            this.dayOffIDTxt.TabIndex = 0;
             // 
-            // dayOffButton2
+            // tabControl3
             // 
-            this.dayOffButton2.Location = new System.Drawing.Point(172, 330);
-            this.dayOffButton2.Name = "dayOffButton2";
-            this.dayOffButton2.Size = new System.Drawing.Size(80, 40);
-            this.dayOffButton2.TabIndex = 3;
-            this.dayOffButton2.Text = "Sửa";
-            this.dayOffButton2.UseVisualStyleBackColor = true;
+            this.tabControl3.Controls.Add(this.tabPage3);
+            this.tabControl3.Controls.Add(this.tabPage4);
+            this.tabControl3.Location = new System.Drawing.Point(275, 24);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(488, 450);
+            this.tabControl3.TabIndex = 0;
             // 
-            // dayOffButton3
+            // tabPage3
             // 
-            this.dayOffButton3.Location = new System.Drawing.Point(103, 392);
-            this.dayOffButton3.Name = "dayOffButton3";
-            this.dayOffButton3.Size = new System.Drawing.Size(80, 40);
-            this.dayOffButton3.TabIndex = 4;
-            this.dayOffButton3.Text = "Xóa";
-            this.dayOffButton3.UseVisualStyleBackColor = true;
+            this.tabPage3.Controls.Add(this.allDayOffLeaveTable);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(480, 424);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Tất cả số lần nghỉ của nhân viên";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // allDayOffLeaveTable
+            // 
+            this.allDayOffLeaveTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.allDayOffLeaveTable.Location = new System.Drawing.Point(0, 0);
+            this.allDayOffLeaveTable.Name = "allDayOffLeaveTable";
+            this.allDayOffLeaveTable.Size = new System.Drawing.Size(480, 424);
+            this.allDayOffLeaveTable.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.emplDayOffStaticTable);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(480, 424);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "Thống kê số ngày nghỉ của nhân viên trong tháng";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // emplDayOffStaticTable
+            // 
+            this.emplDayOffStaticTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.emplDayOffStaticTable.Location = new System.Drawing.Point(0, 0);
+            this.emplDayOffStaticTable.Name = "emplDayOffStaticTable";
+            this.emplDayOffStaticTable.Size = new System.Drawing.Size(480, 424);
+            this.emplDayOffStaticTable.TabIndex = 0;
+            // 
+            // Maduan
+            // 
+            this.Maduan.DataPropertyName = "maDA";
+            this.Maduan.HeaderText = "Ma Du An ";
+            this.Maduan.Name = "Maduan";
+            this.Maduan.ReadOnly = true;
+            // 
+            // tenDA
+            // 
+            this.tenDA.DataPropertyName = "tenDA";
+            this.tenDA.HeaderText = "Ten Du An";
+            this.tenDA.Name = "tenDA";
+            this.tenDA.ReadOnly = true;
+            // 
+            // DiaDiem
+            // 
+            this.DiaDiem.DataPropertyName = "diaDiem";
+            this.DiaDiem.HeaderText = "Dia Diem";
+            this.DiaDiem.Name = "DiaDiem";
+            this.DiaDiem.ReadOnly = true;
+            // 
+            // NgayBD
+            // 
+            this.NgayBD.DataPropertyName = "ngayBD";
+            this.NgayBD.HeaderText = "Ngay BD";
+            this.NgayBD.Name = "NgayBD";
+            this.NgayBD.ReadOnly = true;
+            // 
+            // NgayKT
+            // 
+            this.NgayKT.DataPropertyName = "ngayKT";
+            this.NgayKT.HeaderText = "Ngay KT";
+            this.NgayKT.Name = "NgayKT";
+            this.NgayKT.ReadOnly = true;
+            // 
+            // MaPB
+            // 
+            this.MaPB.DataPropertyName = "maPB";
+            this.MaPB.HeaderText = "Ma PB";
+            this.MaPB.Name = "MaPB";
+            this.MaPB.ReadOnly = true;
             // 
             // EmployeesManagerment
             // 
@@ -1380,23 +1438,23 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.projectEmplJoinInTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDuAn)).EndInit();
             this.violationTab.ResumeLayout(false);
-            this.dayOffTab.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.allVioationTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emplViolationStaticTable)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.tabControl3.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.allDayOffLeaveTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emplDayOffStaticTable)).EndInit();
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allVioationTable)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.emplViolationStaticTable)).EndInit();
+            this.dayOffTab.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.allDayOffLeaveTable)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.emplDayOffStaticTable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1459,7 +1517,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView projectEmplJoinInTable;
-        private System.Windows.Forms.DataGridView projectTable;
+        private System.Windows.Forms.DataGridView dgvDuAn;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button projectButton6;
         private System.Windows.Forms.Button projectButton5;
@@ -1527,6 +1585,12 @@
         private System.Windows.Forms.DataGridView allDayOffLeaveTable;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataGridView emplDayOffStaticTable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Maduan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenDA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaDiem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayBD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPB;
     }
 }
 
