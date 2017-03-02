@@ -1,2 +1,0 @@
-C:\Users\Linh\Documents\EmployeesManagerment\BUS\bin\Debug\BUS.exe.config
-C:\Users\Linh\Documents\EmployeesManagerment\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
