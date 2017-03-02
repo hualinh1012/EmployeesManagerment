@@ -1,0 +1,5 @@
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\Entity\bin\Debug\Entity.dll
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\Entity\bin\Debug\Entity.pdb
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\Entity\obj\Debug\Entity.dll
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\Entity\obj\Debug\Entity.pdb

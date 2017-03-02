@@ -1,0 +1,7 @@
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\DAL\bin\Debug\DAL.dll
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\DAL\bin\Debug\DAL.pdb
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\DAL\bin\Debug\Entity.dll
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\DAL\bin\Debug\Entity.pdb
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\DAL\obj\Debug\DAL.dll
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,9 @@
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\BUS\bin\Debug\BUS.dll
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\BUS\bin\Debug\BUS.pdb
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\BUS\bin\Debug\DAL.dll
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\BUS\bin\Debug\Entity.dll
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\BUS\bin\Debug\DAL.pdb
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\BUS\bin\Debug\Entity.pdb
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\BUS\obj\Debug\BUS.dll
+C:\Users\lehuy\OneDrive\Tài liệu\GitHub\EmployeesManagerment\BUS\obj\Debug\BUS.pdb
