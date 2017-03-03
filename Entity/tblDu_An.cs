@@ -92,9 +92,8 @@ namespace Entity
                 maPb = value;
             }
         }
-        public tblDu_An(int mada, string tenda, string diadiem, DateTime ngaybd, DateTime ngaykt, int mapb)
+        public tblDu_An(string tenda, string diadiem, DateTime ngaybd, DateTime ngaykt, int mapb)
         {
-            this.maDuan = mada;
             this.tenDuan = tenda;
             this.diaDiem = diadiem;
             this.ngayBd = ngaybd;

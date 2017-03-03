@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Catch.cs" />
     <Compile Include="EmployeesManagerment.cs">
       <SubType>Form</SubType>
     </Compile>

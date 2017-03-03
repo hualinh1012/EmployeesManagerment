@@ -77,9 +77,9 @@
             this.departmentTable = new System.Windows.Forms.DataGridView();
             this.projectTab = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.projectButton6 = new System.Windows.Forms.Button();
-            this.projectButton5 = new System.Windows.Forms.Button();
-            this.projectButton4 = new System.Windows.Forms.Button();
+            this.btnXoa_NVDA = new System.Windows.Forms.Button();
+            this.btnSua_NVDA = new System.Windows.Forms.Button();
+            this.btnThem_NVDA = new System.Windows.Forms.Button();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -92,7 +92,7 @@
             this.dtpNgayKT = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayBD = new System.Windows.Forms.DateTimePicker();
             this.btnSua_Duan = new System.Windows.Forms.Button();
-            this.btnXoaDuan = new System.Windows.Forms.Button();
+            this.btnXoa_Duan = new System.Windows.Forms.Button();
             this.btnThem_Duan = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.txtMaPB_DA = new System.Windows.Forms.ComboBox();
@@ -650,9 +650,9 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.projectButton6);
-            this.groupBox4.Controls.Add(this.projectButton5);
-            this.groupBox4.Controls.Add(this.projectButton4);
+            this.groupBox4.Controls.Add(this.btnXoa_NVDA);
+            this.groupBox4.Controls.Add(this.btnSua_NVDA);
+            this.groupBox4.Controls.Add(this.btnThem_NVDA);
             this.groupBox4.Controls.Add(this.label30);
             this.groupBox4.Controls.Add(this.label29);
             this.groupBox4.Controls.Add(this.label28);
@@ -668,32 +668,32 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông tin nhân viên tham gia dự án";
             // 
-            // projectButton6
+            // btnXoa_NVDA
             // 
-            this.projectButton6.Location = new System.Drawing.Point(189, 154);
-            this.projectButton6.Name = "projectButton6";
-            this.projectButton6.Size = new System.Drawing.Size(75, 23);
-            this.projectButton6.TabIndex = 10;
-            this.projectButton6.Text = "Xóa";
-            this.projectButton6.UseVisualStyleBackColor = true;
+            this.btnXoa_NVDA.Location = new System.Drawing.Point(189, 154);
+            this.btnXoa_NVDA.Name = "btnXoa_NVDA";
+            this.btnXoa_NVDA.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa_NVDA.TabIndex = 10;
+            this.btnXoa_NVDA.Text = "Xóa";
+            this.btnXoa_NVDA.UseVisualStyleBackColor = true;
             // 
-            // projectButton5
+            // btnSua_NVDA
             // 
-            this.projectButton5.Location = new System.Drawing.Point(99, 155);
-            this.projectButton5.Name = "projectButton5";
-            this.projectButton5.Size = new System.Drawing.Size(75, 23);
-            this.projectButton5.TabIndex = 9;
-            this.projectButton5.Text = "Sửa";
-            this.projectButton5.UseVisualStyleBackColor = true;
+            this.btnSua_NVDA.Location = new System.Drawing.Point(99, 155);
+            this.btnSua_NVDA.Name = "btnSua_NVDA";
+            this.btnSua_NVDA.Size = new System.Drawing.Size(75, 23);
+            this.btnSua_NVDA.TabIndex = 9;
+            this.btnSua_NVDA.Text = "Sửa";
+            this.btnSua_NVDA.UseVisualStyleBackColor = true;
             // 
-            // projectButton4
+            // btnThem_NVDA
             // 
-            this.projectButton4.Location = new System.Drawing.Point(7, 155);
-            this.projectButton4.Name = "projectButton4";
-            this.projectButton4.Size = new System.Drawing.Size(75, 23);
-            this.projectButton4.TabIndex = 8;
-            this.projectButton4.Text = "Thêm";
-            this.projectButton4.UseVisualStyleBackColor = true;
+            this.btnThem_NVDA.Location = new System.Drawing.Point(7, 155);
+            this.btnThem_NVDA.Name = "btnThem_NVDA";
+            this.btnThem_NVDA.Size = new System.Drawing.Size(75, 23);
+            this.btnThem_NVDA.TabIndex = 8;
+            this.btnThem_NVDA.Text = "Thêm";
+            this.btnThem_NVDA.UseVisualStyleBackColor = true;
             // 
             // label30
             // 
@@ -764,7 +764,7 @@
             this.groupBox3.Controls.Add(this.dtpNgayKT);
             this.groupBox3.Controls.Add(this.dtpNgayBD);
             this.groupBox3.Controls.Add(this.btnSua_Duan);
-            this.groupBox3.Controls.Add(this.btnXoaDuan);
+            this.groupBox3.Controls.Add(this.btnXoa_Duan);
             this.groupBox3.Controls.Add(this.btnThem_Duan);
             this.groupBox3.Controls.Add(this.label26);
             this.groupBox3.Controls.Add(this.txtMaPB_DA);
@@ -806,15 +806,17 @@
             this.btnSua_Duan.TabIndex = 14;
             this.btnSua_Duan.Text = "Sửa";
             this.btnSua_Duan.UseVisualStyleBackColor = true;
+            this.btnSua_Duan.Click += new System.EventHandler(this.btnSua_Duan_Click);
             // 
-            // btnXoaDuan
+            // btnXoa_Duan
             // 
-            this.btnXoaDuan.Location = new System.Drawing.Point(189, 204);
-            this.btnXoaDuan.Name = "btnXoaDuan";
-            this.btnXoaDuan.Size = new System.Drawing.Size(75, 23);
-            this.btnXoaDuan.TabIndex = 13;
-            this.btnXoaDuan.Text = "Xóa";
-            this.btnXoaDuan.UseVisualStyleBackColor = true;
+            this.btnXoa_Duan.Location = new System.Drawing.Point(189, 204);
+            this.btnXoa_Duan.Name = "btnXoa_Duan";
+            this.btnXoa_Duan.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa_Duan.TabIndex = 13;
+            this.btnXoa_Duan.Text = "Xóa";
+            this.btnXoa_Duan.UseVisualStyleBackColor = true;
+            this.btnXoa_Duan.Click += new System.EventHandler(this.btnXoa_Duan_Click);
             // 
             // btnThem_Duan
             // 
@@ -904,6 +906,7 @@
             // 
             // txtMaDuAn
             // 
+            this.txtMaDuAn.Enabled = false;
             this.txtMaDuAn.Location = new System.Drawing.Point(128, 26);
             this.txtMaDuAn.Name = "txtMaDuAn";
             this.txtMaDuAn.Size = new System.Drawing.Size(125, 20);
@@ -1521,9 +1524,9 @@
         private System.Windows.Forms.DataGridView projectEmplJoinInTable;
         private System.Windows.Forms.DataGridView dgvDuAn;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button projectButton6;
-        private System.Windows.Forms.Button projectButton5;
-        private System.Windows.Forms.Button projectButton4;
+        private System.Windows.Forms.Button btnXoa_NVDA;
+        private System.Windows.Forms.Button btnSua_NVDA;
+        private System.Windows.Forms.Button btnThem_NVDA;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
@@ -1533,7 +1536,7 @@
         private System.Windows.Forms.TextBox projectEmplNameTxt;
         private System.Windows.Forms.TextBox projectEmplIDTxt;
         private System.Windows.Forms.Button btnSua_Duan;
-        private System.Windows.Forms.Button btnXoaDuan;
+        private System.Windows.Forms.Button btnXoa_Duan;
         private System.Windows.Forms.Button btnThem_Duan;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox txtMaPB_DA;

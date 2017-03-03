@@ -53,7 +53,6 @@ namespace GUI
 
         public void UnEnebal()
         {
-            txtMaDuAn.Enabled = true;
             txtTenDuAn.Enabled = true;
             txtMaPB_DA.Enabled = true;
             txtDiaDiem.Enabled = true;
@@ -87,10 +86,53 @@ namespace GUI
         private void btnThem_Duan_Click(object sender, EventArgs e)
         {
             clearData();
-            btnThem_Duan.Text = "Huy";
-            btnSua_Duan.Text = "Cannel";
-            btnXoaDuan.Text = "Luu";
-            UnEnebal();
+            if (btnThem_Duan.Text == "Thêm")
+            {
+                btnThem_Duan.Text = "Lưu";
+                btnSua_Duan.Text = "Cannel";
+                btnXoa_Duan.Enabled = false;
+            }
+            else
+            {
+                btnThem_Duan.Text = "Thêm";
+                btnSua_Duan.Text = "Sửa";
+                btnXoa_Duan.Enabled = true;
+                if( !Catch.cNullTB(txtTenDuAn.Text)& !Catch.cNullTB(txtDiaDiem.Text)& !Catch.cNullTB(txtMaPB_DA.Text))
+                {
+                    string tenda = txtTenDuAn.Text.Trim();
+                    string diadiem = txtDiaDiem.Text.Trim();
+                    DateTime ngaybd = Convert.ToDateTime(dtpNgayBD.Text.Trim());
+                    DateTime ngaykt = Convert.ToDateTime(dtpNgayKT.Text.Trim());
+                    int mapb = -Convert.ToInt32(txtMaPB_DA.Text.Trim());
+                    tblDu_An duan = new tblDu_An(tenda, diadiem, ngaybd, ngaykt, mapb);
+                    tblDuAn_BUS.addDu_An(duan);
+                }
+                else
+                {
+                    MessageBox.Show("Chưa nhập dữ liệu");
+                }
+            }
+
+        }
+
+        private void btnSua_Duan_Click(object sender, EventArgs e)
+        {
+            if (btnSua_Duan.Text == "Sửa")
+            {
+                btnThem_Duan.Text = "Lưu";
+                btnSua_Duan.Text = "Cannel";
+                btnXoa_Duan.Enabled = false;
+            }
+            else
+            {
+                btnThem_Duan.Text = "Thêm";
+                btnSua_Duan.Text = "Sửa";
+                btnXoa_Duan.Enabled = true;
+            }
+        }
+
+        private void btnXoa_Duan_Click(object sender, EventArgs e)
+        {
 
         }
     }
