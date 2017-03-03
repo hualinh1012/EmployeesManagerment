@@ -87,8 +87,7 @@ namespace GUI
         private void btnThem_Duan_Click(object sender, EventArgs e)
         {
             clearData();
-            btnSua_Duan.Enabled = false;
-            btnXoaDuan.Enabled = false;
+            btnThem_Duan.Text = "Huy";
             UnEnebal();
 
         }
