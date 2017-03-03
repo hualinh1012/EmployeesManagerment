@@ -40,5 +40,29 @@ namespace DAL
             conn.Close();
             return dt;
         }
+
+
+        public static void ThemDuAn(tblDu_An Duan)
+        {
+            SqlConnection conn = SqlConnect.Connect();
+            SqlCommand cmd = new SqlCommand("THEM_DU_AN");
+            cmd.CommandType = CommandType.StoredProcedure;
+            /*cmd.Parameters.Add("@maDA", SqlDbType.Int);*/
+            cmd.Parameters.Add("@tenDA", SqlDbType.NVarChar, 100);
+            cmd.Parameters.Add("@diaDiem", SqlDbType.NVarChar,100);
+            cmd.Parameters.Add("@ngayBatDau", SqlDbType.Date);
+            cmd.Parameters.Add("@ngayKetThuc", SqlDbType.Date);
+            cmd.Parameters.Add("@maPB", SqlDbType.Int);
+          /*  cmd.Parameters["@maDA"].Value = Duan.MaDuan;*/
+            cmd.Parameters["@tenDA"].Value = Duan.TenDuan;
+            cmd.Parameters["@diaDiem"].Value = Duan.DiaDiem;
+            cmd.Parameters["@ngayBatDau"].Value = Duan.NgayBd;
+            cmd.Parameters["@ngayKetThuc"].Value = Duan.NgayKt;
+            cmd.Parameters["@maPB"].Value = Duan.MaPb;
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
     }
 }

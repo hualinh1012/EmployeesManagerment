@@ -89,25 +89,31 @@
             this.projectEmplNameTxt = new System.Windows.Forms.TextBox();
             this.projectEmplIDTxt = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.projectButton2 = new System.Windows.Forms.Button();
-            this.projectButton3 = new System.Windows.Forms.Button();
-            this.projectButton1 = new System.Windows.Forms.Button();
+            this.dtpNgayKT = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayBD = new System.Windows.Forms.DateTimePicker();
+            this.btnSua_Duan = new System.Windows.Forms.Button();
+            this.btnXoaDuan = new System.Windows.Forms.Button();
+            this.btnThem_Duan = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
-            this.projectDepartmentCombobox = new System.Windows.Forms.ComboBox();
+            this.txtMaPB_DA = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.projectEndDateTxt = new System.Windows.Forms.TextBox();
-            this.projectStartDateTxt = new System.Windows.Forms.TextBox();
-            this.projectLocationTxt = new System.Windows.Forms.TextBox();
-            this.projectNameTxt = new System.Windows.Forms.TextBox();
-            this.projectIDTxt = new System.Windows.Forms.TextBox();
+            this.txtDiaDiem = new System.Windows.Forms.TextBox();
+            this.txtTenDuAn = new System.Windows.Forms.TextBox();
+            this.txtMaDuAn = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.projectEmplJoinInTable = new System.Windows.Forms.DataGridView();
             this.dgvDuAn = new System.Windows.Forms.DataGridView();
+            this.Maduan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayKT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.violationTab = new System.Windows.Forms.TabPage();
             this.violationButton3 = new System.Windows.Forms.Button();
             this.violationButton2 = new System.Windows.Forms.Button();
@@ -152,12 +158,6 @@
             this.allDayOffLeaveTable = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.emplDayOffStaticTable = new System.Windows.Forms.DataGridView();
-            this.Maduan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayKT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.emplTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -761,21 +761,21 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.projectButton2);
-            this.groupBox3.Controls.Add(this.projectButton3);
-            this.groupBox3.Controls.Add(this.projectButton1);
+            this.groupBox3.Controls.Add(this.dtpNgayKT);
+            this.groupBox3.Controls.Add(this.dtpNgayBD);
+            this.groupBox3.Controls.Add(this.btnSua_Duan);
+            this.groupBox3.Controls.Add(this.btnXoaDuan);
+            this.groupBox3.Controls.Add(this.btnThem_Duan);
             this.groupBox3.Controls.Add(this.label26);
-            this.groupBox3.Controls.Add(this.projectDepartmentCombobox);
+            this.groupBox3.Controls.Add(this.txtMaPB_DA);
             this.groupBox3.Controls.Add(this.label25);
             this.groupBox3.Controls.Add(this.label24);
             this.groupBox3.Controls.Add(this.label23);
             this.groupBox3.Controls.Add(this.label22);
             this.groupBox3.Controls.Add(this.label21);
-            this.groupBox3.Controls.Add(this.projectEndDateTxt);
-            this.groupBox3.Controls.Add(this.projectStartDateTxt);
-            this.groupBox3.Controls.Add(this.projectLocationTxt);
-            this.groupBox3.Controls.Add(this.projectNameTxt);
-            this.groupBox3.Controls.Add(this.projectIDTxt);
+            this.groupBox3.Controls.Add(this.txtDiaDiem);
+            this.groupBox3.Controls.Add(this.txtTenDuAn);
+            this.groupBox3.Controls.Add(this.txtMaDuAn);
             this.groupBox3.Location = new System.Drawing.Point(9, 15);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(270, 242);
@@ -783,32 +783,48 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin dự án";
             // 
-            // projectButton2
+            // dtpNgayKT
             // 
-            this.projectButton2.Location = new System.Drawing.Point(99, 204);
-            this.projectButton2.Name = "projectButton2";
-            this.projectButton2.Size = new System.Drawing.Size(75, 23);
-            this.projectButton2.TabIndex = 14;
-            this.projectButton2.Text = "Sửa";
-            this.projectButton2.UseVisualStyleBackColor = true;
+            this.dtpNgayKT.Location = new System.Drawing.Point(80, 134);
+            this.dtpNgayKT.Name = "dtpNgayKT";
+            this.dtpNgayKT.Size = new System.Drawing.Size(200, 20);
+            this.dtpNgayKT.TabIndex = 16;
+            this.dtpNgayKT.ValueChanged += new System.EventHandler(this.dtpNgayKT_ValueChanged);
             // 
-            // projectButton3
+            // dtpNgayBD
             // 
-            this.projectButton3.Location = new System.Drawing.Point(189, 204);
-            this.projectButton3.Name = "projectButton3";
-            this.projectButton3.Size = new System.Drawing.Size(75, 23);
-            this.projectButton3.TabIndex = 13;
-            this.projectButton3.Text = "Xóa";
-            this.projectButton3.UseVisualStyleBackColor = true;
+            this.dtpNgayBD.Location = new System.Drawing.Point(80, 109);
+            this.dtpNgayBD.Name = "dtpNgayBD";
+            this.dtpNgayBD.Size = new System.Drawing.Size(200, 20);
+            this.dtpNgayBD.TabIndex = 15;
             // 
-            // projectButton1
+            // btnSua_Duan
             // 
-            this.projectButton1.Location = new System.Drawing.Point(7, 204);
-            this.projectButton1.Name = "projectButton1";
-            this.projectButton1.Size = new System.Drawing.Size(75, 23);
-            this.projectButton1.TabIndex = 12;
-            this.projectButton1.Text = "Thêm";
-            this.projectButton1.UseVisualStyleBackColor = true;
+            this.btnSua_Duan.Location = new System.Drawing.Point(99, 204);
+            this.btnSua_Duan.Name = "btnSua_Duan";
+            this.btnSua_Duan.Size = new System.Drawing.Size(75, 23);
+            this.btnSua_Duan.TabIndex = 14;
+            this.btnSua_Duan.Text = "Sửa";
+            this.btnSua_Duan.UseVisualStyleBackColor = true;
+            // 
+            // btnXoaDuan
+            // 
+            this.btnXoaDuan.Location = new System.Drawing.Point(189, 204);
+            this.btnXoaDuan.Name = "btnXoaDuan";
+            this.btnXoaDuan.Size = new System.Drawing.Size(75, 23);
+            this.btnXoaDuan.TabIndex = 13;
+            this.btnXoaDuan.Text = "Xóa";
+            this.btnXoaDuan.UseVisualStyleBackColor = true;
+            // 
+            // btnThem_Duan
+            // 
+            this.btnThem_Duan.Location = new System.Drawing.Point(7, 204);
+            this.btnThem_Duan.Name = "btnThem_Duan";
+            this.btnThem_Duan.Size = new System.Drawing.Size(75, 23);
+            this.btnThem_Duan.TabIndex = 12;
+            this.btnThem_Duan.Text = "Thêm";
+            this.btnThem_Duan.UseVisualStyleBackColor = true;
+            this.btnThem_Duan.Click += new System.EventHandler(this.btnThem_Duan_Click);
             // 
             // label26
             // 
@@ -819,18 +835,18 @@
             this.label26.TabIndex = 11;
             this.label26.Text = "Phòng ban";
             // 
-            // projectDepartmentCombobox
+            // txtMaPB_DA
             // 
-            this.projectDepartmentCombobox.FormattingEnabled = true;
-            this.projectDepartmentCombobox.Location = new System.Drawing.Point(128, 160);
-            this.projectDepartmentCombobox.Name = "projectDepartmentCombobox";
-            this.projectDepartmentCombobox.Size = new System.Drawing.Size(125, 21);
-            this.projectDepartmentCombobox.TabIndex = 10;
+            this.txtMaPB_DA.FormattingEnabled = true;
+            this.txtMaPB_DA.Location = new System.Drawing.Point(128, 160);
+            this.txtMaPB_DA.Name = "txtMaPB_DA";
+            this.txtMaPB_DA.Size = new System.Drawing.Size(125, 21);
+            this.txtMaPB_DA.TabIndex = 10;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(22, 136);
+            this.label25.Location = new System.Drawing.Point(2, 134);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(74, 13);
             this.label25.TabIndex = 9;
@@ -839,7 +855,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(22, 109);
+            this.label24.Location = new System.Drawing.Point(2, 109);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(72, 13);
             this.label24.TabIndex = 8;
@@ -872,40 +888,26 @@
             this.label21.TabIndex = 5;
             this.label21.Text = "Mã dự án";
             // 
-            // projectEndDateTxt
+            // txtDiaDiem
             // 
-            this.projectEndDateTxt.Location = new System.Drawing.Point(128, 133);
-            this.projectEndDateTxt.Name = "projectEndDateTxt";
-            this.projectEndDateTxt.Size = new System.Drawing.Size(125, 20);
-            this.projectEndDateTxt.TabIndex = 4;
+            this.txtDiaDiem.Location = new System.Drawing.Point(128, 79);
+            this.txtDiaDiem.Name = "txtDiaDiem";
+            this.txtDiaDiem.Size = new System.Drawing.Size(125, 20);
+            this.txtDiaDiem.TabIndex = 2;
             // 
-            // projectStartDateTxt
+            // txtTenDuAn
             // 
-            this.projectStartDateTxt.Location = new System.Drawing.Point(128, 106);
-            this.projectStartDateTxt.Name = "projectStartDateTxt";
-            this.projectStartDateTxt.Size = new System.Drawing.Size(125, 20);
-            this.projectStartDateTxt.TabIndex = 3;
+            this.txtTenDuAn.Location = new System.Drawing.Point(128, 52);
+            this.txtTenDuAn.Name = "txtTenDuAn";
+            this.txtTenDuAn.Size = new System.Drawing.Size(125, 20);
+            this.txtTenDuAn.TabIndex = 1;
             // 
-            // projectLocationTxt
+            // txtMaDuAn
             // 
-            this.projectLocationTxt.Location = new System.Drawing.Point(128, 79);
-            this.projectLocationTxt.Name = "projectLocationTxt";
-            this.projectLocationTxt.Size = new System.Drawing.Size(125, 20);
-            this.projectLocationTxt.TabIndex = 2;
-            // 
-            // projectNameTxt
-            // 
-            this.projectNameTxt.Location = new System.Drawing.Point(128, 52);
-            this.projectNameTxt.Name = "projectNameTxt";
-            this.projectNameTxt.Size = new System.Drawing.Size(125, 20);
-            this.projectNameTxt.TabIndex = 1;
-            // 
-            // projectIDTxt
-            // 
-            this.projectIDTxt.Location = new System.Drawing.Point(128, 26);
-            this.projectIDTxt.Name = "projectIDTxt";
-            this.projectIDTxt.Size = new System.Drawing.Size(125, 20);
-            this.projectIDTxt.TabIndex = 0;
+            this.txtMaDuAn.Location = new System.Drawing.Point(128, 26);
+            this.txtMaDuAn.Name = "txtMaDuAn";
+            this.txtMaDuAn.Size = new System.Drawing.Size(125, 20);
+            this.txtMaDuAn.TabIndex = 0;
             // 
             // label20
             // 
@@ -950,6 +952,48 @@
             this.dgvDuAn.ReadOnly = true;
             this.dgvDuAn.Size = new System.Drawing.Size(466, 214);
             this.dgvDuAn.TabIndex = 0;
+            // 
+            // Maduan
+            // 
+            this.Maduan.DataPropertyName = "maDA";
+            this.Maduan.HeaderText = "Ma Du An ";
+            this.Maduan.Name = "Maduan";
+            this.Maduan.ReadOnly = true;
+            // 
+            // tenDA
+            // 
+            this.tenDA.DataPropertyName = "tenDA";
+            this.tenDA.HeaderText = "Ten Du An";
+            this.tenDA.Name = "tenDA";
+            this.tenDA.ReadOnly = true;
+            // 
+            // DiaDiem
+            // 
+            this.DiaDiem.DataPropertyName = "diaDiem";
+            this.DiaDiem.HeaderText = "Dia Diem";
+            this.DiaDiem.Name = "DiaDiem";
+            this.DiaDiem.ReadOnly = true;
+            // 
+            // NgayBD
+            // 
+            this.NgayBD.DataPropertyName = "ngayBatDau";
+            this.NgayBD.HeaderText = "Ngay BD";
+            this.NgayBD.Name = "NgayBD";
+            this.NgayBD.ReadOnly = true;
+            // 
+            // NgayKT
+            // 
+            this.NgayKT.DataPropertyName = "ngayKetThuc";
+            this.NgayKT.HeaderText = "Ngay KT";
+            this.NgayKT.Name = "NgayKT";
+            this.NgayKT.ReadOnly = true;
+            // 
+            // MaPB
+            // 
+            this.MaPB.DataPropertyName = "maPB";
+            this.MaPB.HeaderText = "Ma PB";
+            this.MaPB.Name = "MaPB";
+            this.MaPB.ReadOnly = true;
             // 
             // violationTab
             // 
@@ -1367,48 +1411,6 @@
             this.emplDayOffStaticTable.Size = new System.Drawing.Size(480, 424);
             this.emplDayOffStaticTable.TabIndex = 0;
             // 
-            // Maduan
-            // 
-            this.Maduan.DataPropertyName = "maDA";
-            this.Maduan.HeaderText = "Ma Du An ";
-            this.Maduan.Name = "Maduan";
-            this.Maduan.ReadOnly = true;
-            // 
-            // tenDA
-            // 
-            this.tenDA.DataPropertyName = "tenDA";
-            this.tenDA.HeaderText = "Ten Du An";
-            this.tenDA.Name = "tenDA";
-            this.tenDA.ReadOnly = true;
-            // 
-            // DiaDiem
-            // 
-            this.DiaDiem.DataPropertyName = "diaDiem";
-            this.DiaDiem.HeaderText = "Dia Diem";
-            this.DiaDiem.Name = "DiaDiem";
-            this.DiaDiem.ReadOnly = true;
-            // 
-            // NgayBD
-            // 
-            this.NgayBD.DataPropertyName = "ngayBatDau";
-            this.NgayBD.HeaderText = "Ngay BD";
-            this.NgayBD.Name = "NgayBD";
-            this.NgayBD.ReadOnly = true;
-            // 
-            // NgayKT
-            // 
-            this.NgayKT.DataPropertyName = "ngayKetThuc";
-            this.NgayKT.HeaderText = "Ngay KT";
-            this.NgayKT.Name = "NgayKT";
-            this.NgayKT.ReadOnly = true;
-            // 
-            // MaPB
-            // 
-            this.MaPB.DataPropertyName = "maPB";
-            this.MaPB.HeaderText = "Ma PB";
-            this.MaPB.Name = "MaPB";
-            this.MaPB.ReadOnly = true;
-            // 
             // EmployeesManagerment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1512,8 +1514,8 @@
         private System.Windows.Forms.Button departmentButton3;
         private System.Windows.Forms.Button departmentButton1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox projectNameTxt;
-        private System.Windows.Forms.TextBox projectIDTxt;
+        private System.Windows.Forms.TextBox txtTenDuAn;
+        private System.Windows.Forms.TextBox txtMaDuAn;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView projectEmplJoinInTable;
@@ -1530,19 +1532,17 @@
         private System.Windows.Forms.TextBox projectEmplTaskTxt;
         private System.Windows.Forms.TextBox projectEmplNameTxt;
         private System.Windows.Forms.TextBox projectEmplIDTxt;
-        private System.Windows.Forms.Button projectButton2;
-        private System.Windows.Forms.Button projectButton3;
-        private System.Windows.Forms.Button projectButton1;
+        private System.Windows.Forms.Button btnSua_Duan;
+        private System.Windows.Forms.Button btnXoaDuan;
+        private System.Windows.Forms.Button btnThem_Duan;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox projectDepartmentCombobox;
+        private System.Windows.Forms.ComboBox txtMaPB_DA;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox projectEndDateTxt;
-        private System.Windows.Forms.TextBox projectStartDateTxt;
-        private System.Windows.Forms.TextBox projectLocationTxt;
+        private System.Windows.Forms.TextBox txtDiaDiem;
         private System.Windows.Forms.Button violationButton3;
         private System.Windows.Forms.Button violationButton2;
         private System.Windows.Forms.Button violationButton1;
@@ -1591,6 +1591,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayBD;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayKT;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPB;
+        private System.Windows.Forms.DateTimePicker dtpNgayKT;
+        private System.Windows.Forms.DateTimePicker dtpNgayBD;
     }
 }
 

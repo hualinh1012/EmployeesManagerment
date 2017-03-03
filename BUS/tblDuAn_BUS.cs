@@ -14,5 +14,9 @@ namespace BUS
         {
             return tblDuAn_DAL.getDuAn();
         }
+        public static void addDu_An(tblDu_An Duan)
+        {
+            tblDuAn_DAL.ThemDuAn(Duan);
+        }
     }
 }
