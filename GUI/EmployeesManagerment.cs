@@ -88,6 +88,8 @@ namespace GUI
         {
             clearData();
             btnThem_Duan.Text = "Huy";
+            btnSua_Duan.Text = "Cannel";
+            btnXoaDuan.Text = "Luu";
             UnEnebal();
 
         }
