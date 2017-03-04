@@ -18,13 +18,6 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void EmployeesManagerment_Load(object sender, EventArgs e)
-        {
-            showDu_An();
-            buidingDu_An();
-        }
-
-
         /// <summary>
         /// BANG DU AN
         /// </summary>
@@ -82,17 +75,22 @@ namespace GUI
         {
 
         }
-
+        /// <summary>
+        /// Them DU AN
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnThem_Duan_Click(object sender, EventArgs e)
         {
-            clearData();
             if (btnThem_Duan.Text == "Thêm")
             {
-                btnThem_Duan.Text = "Lưu";
+                UnEnebal();
+                clearData();
+                btnThem_Duan.Text = "Lưu Thêm";
                 btnSua_Duan.Text = "Cannel";
                 btnXoa_Duan.Enabled = false;
             }
-            else
+            else if(btnThem_Duan.Text == "Lưu Thêm")
             {
                 btnThem_Duan.Text = "Thêm";
                 btnSua_Duan.Text = "Sửa";
@@ -103,9 +101,38 @@ namespace GUI
                     string diadiem = txtDiaDiem.Text.Trim();
                     DateTime ngaybd = Convert.ToDateTime(dtpNgayBD.Text.Trim());
                     DateTime ngaykt = Convert.ToDateTime(dtpNgayKT.Text.Trim());
-                    int mapb = -Convert.ToInt32(txtMaPB_DA.Text.Trim());
+                    int mapb = Convert.ToInt32(txtMaPB_DA.Text.Trim());
+
                     tblDu_An duan = new tblDu_An(tenda, diadiem, ngaybd, ngaykt, mapb);
                     tblDuAn_BUS.addDu_An(duan);
+                    showDu_An();
+                    buidingDu_An();
+                    Enebal();
+                }
+                else
+                {
+                    MessageBox.Show("Chưa nhập dữ liệu");
+                }
+            }
+            else if (btnThem_Duan.Text == "Lưu Sửa")
+            {
+                btnThem_Duan.Text = "Thêm";
+                btnSua_Duan.Text = "Sửa";
+                btnXoa_Duan.Enabled = true;
+                if (!Catch.cNullTB(txtTenDuAn.Text) & !Catch.cNullTB(txtDiaDiem.Text) & !Catch.cNullTB(txtMaPB_DA.Text))
+                {
+                    int mada = Convert.ToInt32(txtMaDuAn.Text.Trim());
+                    string tenda = txtTenDuAn.Text.Trim();
+                    string diadiem = txtDiaDiem.Text.Trim();
+                    DateTime ngaybd = Convert.ToDateTime(dtpNgayBD.Text.Trim());
+                    DateTime ngaykt = Convert.ToDateTime(dtpNgayKT.Text.Trim());
+                    int mapb = Convert.ToInt32(txtMaPB_DA.Text.Trim());
+
+                    tblDu_An duan = new tblDu_An(mada ,tenda, diadiem, ngaybd, ngaykt, mapb);
+                    tblDuAn_BUS.suaDu_An(duan);
+                    showDu_An();
+                    buidingDu_An();
+                    Enebal();
                 }
                 else
                 {
@@ -119,21 +146,43 @@ namespace GUI
         {
             if (btnSua_Duan.Text == "Sửa")
             {
-                btnThem_Duan.Text = "Lưu";
+                UnEnebal();
+                txtMaPB_DA.Enabled = false;
+                btnThem_Duan.Text = "Lưu Sửa";
                 btnSua_Duan.Text = "Cannel";
                 btnXoa_Duan.Enabled = false;
+
             }
             else
             {
                 btnThem_Duan.Text = "Thêm";
                 btnSua_Duan.Text = "Sửa";
                 btnXoa_Duan.Enabled = true;
+                Enebal();
             }
         }
 
         private void btnXoa_Duan_Click(object sender, EventArgs e)
         {
-
+            if (!Catch.cNullTB(txtMaDuAn.Text))
+            {
+                int maduan = Convert.ToInt32(txtMaDuAn.Text);
+                tblDuAn_BUS.xoaDu_An(maduan);
+                showDu_An();
+                buidingDu_An();
+                Enebal();
+                
+            }
+            else
+            {
+                MessageBox.Show("Chưa nhập dữ liệu");
+            }
+        }
+        private void EmployeesManagerment_Load(object sender, EventArgs e)
+        {
+            Enebal();
+            showDu_An();
+            buidingDu_An();
         }
     }
 }

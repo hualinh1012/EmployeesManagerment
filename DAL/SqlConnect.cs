@@ -41,23 +41,67 @@ namespace DAL
             return dt;
         }
 
-
+        /// <summary>
+        /// THEM DU AN
+        /// </summary>
+        /// <param name="Duan"></param>
         public static void ThemDuAn(tblDu_An Duan)
         {
             SqlConnection conn = SqlConnect.Connect();
-            SqlCommand cmd = new SqlCommand("THEM_DU_AN");
+            SqlCommand cmd = new SqlCommand("THEM_DU_AN",conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@tenDA", SqlDbType.NVarChar, 100);
-            cmd.Parameters.Add("@diaDiem", SqlDbType.NVarChar,100);
-            cmd.Parameters.Add("@ngayBatDau", SqlDbType.Date);
-            cmd.Parameters.Add("@ngayKetThuc", SqlDbType.Date);
-            cmd.Parameters.Add("@maPB", SqlDbType.Int);
-            cmd.Parameters["@tenDA"].Value = Duan.TenDuan;
-            cmd.Parameters["@diaDiem"].Value = Duan.DiaDiem;
-            cmd.Parameters["@ngayBatDau"].Value = Duan.NgayBd;
-            cmd.Parameters["@ngayKetThuc"].Value = Duan.NgayKt;
-            cmd.Parameters["@maPB"].Value = Duan.MaPb;
+            cmd.Parameters.Add("@TEN_DA", SqlDbType.NVarChar, 100);
+            cmd.Parameters.Add("@DIA_DIEM", SqlDbType.NVarChar,100);
+            cmd.Parameters.Add("@NGAY_BD", SqlDbType.DateTime);
+            cmd.Parameters.Add("@NGAY_KT", SqlDbType.DateTime);
+            cmd.Parameters.Add("@MA_PB", SqlDbType.Int);
+            cmd.Parameters["@TEN_DA"].Value = Duan.TenDuan;
+            cmd.Parameters["@DIA_DIEM"].Value = Duan.DiaDiem;
+            cmd.Parameters["@NGAY_BD"].Value = Duan.NgayBd;
+            cmd.Parameters["@NGAY_KT"].Value = Duan.NgayKt;
+            cmd.Parameters["@MA_PB"].Value = Duan.MaPb;
 
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        /// <summary>
+        /// SUA DU AN
+        /// </summary>
+        /// <param name="Duan"></param>
+
+        public static void SuaDuAn(tblDu_An Duan)
+        {
+            SqlConnection conn = SqlConnect.Connect();
+            SqlCommand cmd = new SqlCommand("SUA_DU_AN", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@MA_DA", SqlDbType.Int);
+            cmd.Parameters.Add("@TEN_DA", SqlDbType.NVarChar, 100);
+            cmd.Parameters.Add("@DIA_DIEM", SqlDbType.NVarChar, 100);
+            cmd.Parameters.Add("@NGAY_BD", SqlDbType.DateTime);
+            cmd.Parameters.Add("@NGAY_KT", SqlDbType.DateTime);
+            cmd.Parameters.Add("@MA_PB", SqlDbType.Int);
+            cmd.Parameters["@MA_DA"].Value = Duan.MaDuan;
+            cmd.Parameters["@TEN_DA"].Value = Duan.TenDuan;
+            cmd.Parameters["@DIA_DIEM"].Value = Duan.DiaDiem;
+            cmd.Parameters["@NGAY_BD"].Value = Duan.NgayBd;
+            cmd.Parameters["@NGAY_KT"].Value = Duan.NgayKt;
+            cmd.Parameters["@MA_PB"].Value = Duan.MaPb;
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+
+        public static void XoaDuan(int maduan)
+        {
+            SqlConnection conn = SqlConnect.Connect();
+            SqlCommand cmd = new SqlCommand("XOA_DU_AN", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@MA_DA", SqlDbType.Int);
+            cmd.Parameters["@MA_DA"].Value = maduan;
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();

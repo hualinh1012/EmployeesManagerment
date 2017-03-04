@@ -100,5 +100,14 @@ namespace Entity
             this.ngayKt = ngaykt;
             this.MaPb = mapb;
         }
+        public tblDu_An(int mada,string tenda, string diadiem, DateTime ngaybd, DateTime ngaykt, int mapb)
+        {
+            this.maDuan = mada;
+            this.tenDuan = tenda;
+            this.diaDiem = diadiem;
+            this.ngayBd = ngaybd;
+            this.ngayKt = ngaykt;
+            this.MaPb = mapb;
+        }
     }
 }

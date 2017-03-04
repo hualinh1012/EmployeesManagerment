@@ -18,5 +18,13 @@ namespace BUS
         {
             tblDuAn_DAL.ThemDuAn(Duan);
         }
+        public static void suaDu_An(tblDu_An Duan)
+        {
+            tblDuAn_DAL.SuaDuAn(Duan);
+        }
+        public static void xoaDu_An(int Duan)
+        {
+            tblDuAn_DAL.XoaDuan(Duan);
+        }
     }
 }
