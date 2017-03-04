@@ -84,10 +84,10 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.projectSpendTimeTxt = new System.Windows.Forms.TextBox();
-            this.projectEmplTaskTxt = new System.Windows.Forms.TextBox();
-            this.projectEmplNameTxt = new System.Windows.Forms.TextBox();
-            this.projectEmplIDTxt = new System.Windows.Forms.TextBox();
+            this.txtSogio_DA = new System.Windows.Forms.TextBox();
+            this.txtNV_DA = new System.Windows.Forms.TextBox();
+            this.txtTenNV_DA = new System.Windows.Forms.TextBox();
+            this.txtMANV_DA = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dtpNgayKT = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayBD = new System.Windows.Forms.DateTimePicker();
@@ -106,7 +106,7 @@
             this.txtMaDuAn = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.projectEmplJoinInTable = new System.Windows.Forms.DataGridView();
+            this.dgvNV_DA = new System.Windows.Forms.DataGridView();
             this.dgvDuAn = new System.Windows.Forms.DataGridView();
             this.Maduan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -158,6 +158,10 @@
             this.allDayOffLeaveTable = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.emplDayOffStaticTable = new System.Windows.Forms.DataGridView();
+            this.maNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soGioLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhemVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.emplTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -170,7 +174,7 @@
             this.projectTab.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.projectEmplJoinInTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNV_DA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDuAn)).BeginInit();
             this.violationTab.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -639,7 +643,7 @@
             this.projectTab.Controls.Add(this.groupBox3);
             this.projectTab.Controls.Add(this.label20);
             this.projectTab.Controls.Add(this.label19);
-            this.projectTab.Controls.Add(this.projectEmplJoinInTable);
+            this.projectTab.Controls.Add(this.dgvNV_DA);
             this.projectTab.Controls.Add(this.dgvDuAn);
             this.projectTab.Location = new System.Drawing.Point(4, 22);
             this.projectTab.Name = "projectTab";
@@ -657,10 +661,10 @@
             this.groupBox4.Controls.Add(this.label29);
             this.groupBox4.Controls.Add(this.label28);
             this.groupBox4.Controls.Add(this.label27);
-            this.groupBox4.Controls.Add(this.projectSpendTimeTxt);
-            this.groupBox4.Controls.Add(this.projectEmplTaskTxt);
-            this.groupBox4.Controls.Add(this.projectEmplNameTxt);
-            this.groupBox4.Controls.Add(this.projectEmplIDTxt);
+            this.groupBox4.Controls.Add(this.txtSogio_DA);
+            this.groupBox4.Controls.Add(this.txtNV_DA);
+            this.groupBox4.Controls.Add(this.txtTenNV_DA);
+            this.groupBox4.Controls.Add(this.txtMANV_DA);
             this.groupBox4.Location = new System.Drawing.Point(9, 274);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(270, 194);
@@ -676,6 +680,7 @@
             this.btnXoa_NVDA.TabIndex = 10;
             this.btnXoa_NVDA.Text = "Xóa";
             this.btnXoa_NVDA.UseVisualStyleBackColor = true;
+            this.btnXoa_NVDA.Click += new System.EventHandler(this.btnXoa_NVDA_Click);
             // 
             // btnSua_NVDA
             // 
@@ -685,6 +690,7 @@
             this.btnSua_NVDA.TabIndex = 9;
             this.btnSua_NVDA.Text = "Sửa";
             this.btnSua_NVDA.UseVisualStyleBackColor = true;
+            this.btnSua_NVDA.Click += new System.EventHandler(this.btnSua_NVDA_Click);
             // 
             // btnThem_NVDA
             // 
@@ -694,6 +700,7 @@
             this.btnThem_NVDA.TabIndex = 8;
             this.btnThem_NVDA.Text = "Thêm";
             this.btnThem_NVDA.UseVisualStyleBackColor = true;
+            this.btnThem_NVDA.Click += new System.EventHandler(this.btnThem_NVDA_Click);
             // 
             // label30
             // 
@@ -731,33 +738,33 @@
             this.label27.TabIndex = 4;
             this.label27.Text = "Mã nhân viên";
             // 
-            // projectSpendTimeTxt
+            // txtSogio_DA
             // 
-            this.projectSpendTimeTxt.Location = new System.Drawing.Point(128, 115);
-            this.projectSpendTimeTxt.Name = "projectSpendTimeTxt";
-            this.projectSpendTimeTxt.Size = new System.Drawing.Size(125, 20);
-            this.projectSpendTimeTxt.TabIndex = 3;
+            this.txtSogio_DA.Location = new System.Drawing.Point(128, 115);
+            this.txtSogio_DA.Name = "txtSogio_DA";
+            this.txtSogio_DA.Size = new System.Drawing.Size(125, 20);
+            this.txtSogio_DA.TabIndex = 3;
             // 
-            // projectEmplTaskTxt
+            // txtNV_DA
             // 
-            this.projectEmplTaskTxt.Location = new System.Drawing.Point(128, 88);
-            this.projectEmplTaskTxt.Name = "projectEmplTaskTxt";
-            this.projectEmplTaskTxt.Size = new System.Drawing.Size(125, 20);
-            this.projectEmplTaskTxt.TabIndex = 2;
+            this.txtNV_DA.Location = new System.Drawing.Point(128, 88);
+            this.txtNV_DA.Name = "txtNV_DA";
+            this.txtNV_DA.Size = new System.Drawing.Size(125, 20);
+            this.txtNV_DA.TabIndex = 2;
             // 
-            // projectEmplNameTxt
+            // txtTenNV_DA
             // 
-            this.projectEmplNameTxt.Location = new System.Drawing.Point(128, 61);
-            this.projectEmplNameTxt.Name = "projectEmplNameTxt";
-            this.projectEmplNameTxt.Size = new System.Drawing.Size(125, 20);
-            this.projectEmplNameTxt.TabIndex = 1;
+            this.txtTenNV_DA.Location = new System.Drawing.Point(128, 61);
+            this.txtTenNV_DA.Name = "txtTenNV_DA";
+            this.txtTenNV_DA.Size = new System.Drawing.Size(125, 20);
+            this.txtTenNV_DA.TabIndex = 1;
             // 
-            // projectEmplIDTxt
+            // txtMANV_DA
             // 
-            this.projectEmplIDTxt.Location = new System.Drawing.Point(128, 34);
-            this.projectEmplIDTxt.Name = "projectEmplIDTxt";
-            this.projectEmplIDTxt.Size = new System.Drawing.Size(125, 20);
-            this.projectEmplIDTxt.TabIndex = 0;
+            this.txtMANV_DA.Location = new System.Drawing.Point(128, 34);
+            this.txtMANV_DA.Name = "txtMANV_DA";
+            this.txtMANV_DA.Size = new System.Drawing.Size(125, 20);
+            this.txtMANV_DA.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -930,13 +937,21 @@
             this.label19.TabIndex = 2;
             this.label19.Text = "Danh sách dự án";
             // 
-            // projectEmplJoinInTable
+            // dgvNV_DA
             // 
-            this.projectEmplJoinInTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.projectEmplJoinInTable.Location = new System.Drawing.Point(288, 274);
-            this.projectEmplJoinInTable.Name = "projectEmplJoinInTable";
-            this.projectEmplJoinInTable.Size = new System.Drawing.Size(466, 194);
-            this.projectEmplJoinInTable.TabIndex = 1;
+            this.dgvNV_DA.AllowUserToAddRows = false;
+            this.dgvNV_DA.AllowUserToDeleteRows = false;
+            this.dgvNV_DA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNV_DA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maNV,
+            this.maDA,
+            this.soGioLam,
+            this.nhemVu});
+            this.dgvNV_DA.Location = new System.Drawing.Point(288, 274);
+            this.dgvNV_DA.Name = "dgvNV_DA";
+            this.dgvNV_DA.ReadOnly = true;
+            this.dgvNV_DA.Size = new System.Drawing.Size(466, 194);
+            this.dgvNV_DA.TabIndex = 1;
             // 
             // dgvDuAn
             // 
@@ -1414,6 +1429,34 @@
             this.emplDayOffStaticTable.Size = new System.Drawing.Size(480, 424);
             this.emplDayOffStaticTable.TabIndex = 0;
             // 
+            // maNV
+            // 
+            this.maNV.DataPropertyName = "maNV";
+            this.maNV.HeaderText = "Ma NV";
+            this.maNV.Name = "maNV";
+            this.maNV.ReadOnly = true;
+            // 
+            // maDA
+            // 
+            this.maDA.DataPropertyName = "maDA";
+            this.maDA.HeaderText = "Ma DA";
+            this.maDA.Name = "maDA";
+            this.maDA.ReadOnly = true;
+            // 
+            // soGioLam
+            // 
+            this.soGioLam.DataPropertyName = "soGioLam";
+            this.soGioLam.HeaderText = "So Gio";
+            this.soGioLam.Name = "soGioLam";
+            this.soGioLam.ReadOnly = true;
+            // 
+            // nhemVu
+            // 
+            this.nhemVu.DataPropertyName = "nhemVu";
+            this.nhemVu.HeaderText = "Nhiem Vu";
+            this.nhemVu.Name = "nhemVu";
+            this.nhemVu.ReadOnly = true;
+            // 
             // EmployeesManagerment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1442,7 +1485,7 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.projectEmplJoinInTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNV_DA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDuAn)).EndInit();
             this.violationTab.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
@@ -1521,7 +1564,7 @@
         private System.Windows.Forms.TextBox txtMaDuAn;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DataGridView projectEmplJoinInTable;
+        private System.Windows.Forms.DataGridView dgvNV_DA;
         private System.Windows.Forms.DataGridView dgvDuAn;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnXoa_NVDA;
@@ -1531,10 +1574,10 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox projectSpendTimeTxt;
-        private System.Windows.Forms.TextBox projectEmplTaskTxt;
-        private System.Windows.Forms.TextBox projectEmplNameTxt;
-        private System.Windows.Forms.TextBox projectEmplIDTxt;
+        private System.Windows.Forms.TextBox txtSogio_DA;
+        private System.Windows.Forms.TextBox txtNV_DA;
+        private System.Windows.Forms.TextBox txtTenNV_DA;
+        private System.Windows.Forms.TextBox txtMANV_DA;
         private System.Windows.Forms.Button btnSua_Duan;
         private System.Windows.Forms.Button btnXoa_Duan;
         private System.Windows.Forms.Button btnThem_Duan;
@@ -1596,6 +1639,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPB;
         private System.Windows.Forms.DateTimePicker dtpNgayKT;
         private System.Windows.Forms.DateTimePicker dtpNgayBD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maDA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soGioLam;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nhemVu;
     }
 }
 

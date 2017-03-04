@@ -68,6 +68,7 @@ namespace GUI
             dtpNgayKT.DataBindings.Add("Text", dgvDuAn.DataSource, "ngayKetThuc");
             txtMaPB_DA.DataBindings.Clear();
             txtMaPB_DA.DataBindings.Add("Text", dgvDuAn.DataSource, "maPB");
+            showThamgia();
         }
 
         
@@ -178,11 +179,35 @@ namespace GUI
                 MessageBox.Show("Chưa nhập dữ liệu");
             }
         }
+        
+
+        public void showThamgia()
+        {
+            int maduan = Convert.ToInt32(txtMaDuAn.Text);
+            dgvNV_DA.DataSource = tblThamgia_BUS.loadThamgia(maduan);
+        }
+
+        private void btnThem_NVDA_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSua_NVDA_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_NVDA_Click(object sender, EventArgs e)
+        {
+
+        }
         private void EmployeesManagerment_Load(object sender, EventArgs e)
         {
             Enebal();
             showDu_An();
             buidingDu_An();
+            
         }
+
     }
 }

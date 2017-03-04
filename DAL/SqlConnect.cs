@@ -94,7 +94,10 @@ namespace DAL
             conn.Close();
         }
 
-
+        /// <summary>
+        /// XOA DU AN
+        /// </summary>
+        /// <param name="maduan"></param>
         public static void XoaDuan(int maduan)
         {
             SqlConnection conn = SqlConnect.Connect();
@@ -106,5 +109,23 @@ namespace DAL
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+
+
+        public static DataTable getThamGia(int maduan)
+        {
+            SqlConnection conn = SqlConnect.Connect();
+            SqlCommand command = new SqlCommand("XEM_THAM_GIA", conn);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@MA_DA", SqlDbType.Int);
+            command.Parameters["@MA_DA"].Value = maduan;
+            conn.Open();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = command;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+
     }
 }
