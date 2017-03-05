@@ -161,7 +161,7 @@
             this.maNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.maDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soGioLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nhemVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhiemVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.emplTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -946,7 +946,7 @@
             this.maNV,
             this.maDA,
             this.soGioLam,
-            this.nhemVu});
+            this.nhiemVu});
             this.dgvNV_DA.Location = new System.Drawing.Point(288, 274);
             this.dgvNV_DA.Name = "dgvNV_DA";
             this.dgvNV_DA.ReadOnly = true;
@@ -970,6 +970,7 @@
             this.dgvDuAn.ReadOnly = true;
             this.dgvDuAn.Size = new System.Drawing.Size(466, 214);
             this.dgvDuAn.TabIndex = 0;
+            this.dgvDuAn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDuAn_CellContentClick);
             // 
             // Maduan
             // 
@@ -1450,12 +1451,12 @@
             this.soGioLam.Name = "soGioLam";
             this.soGioLam.ReadOnly = true;
             // 
-            // nhemVu
+            // nhiemVu
             // 
-            this.nhemVu.DataPropertyName = "nhemVu";
-            this.nhemVu.HeaderText = "Nhiem Vu";
-            this.nhemVu.Name = "nhemVu";
-            this.nhemVu.ReadOnly = true;
+            this.nhiemVu.DataPropertyName = "nhiemVu";
+            this.nhiemVu.HeaderText = "Nhiem Vu";
+            this.nhiemVu.Name = "nhiemVu";
+            this.nhiemVu.ReadOnly = true;
             // 
             // EmployeesManagerment
             // 
@@ -1642,7 +1643,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn maNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn maDA;
         private System.Windows.Forms.DataGridViewTextBoxColumn soGioLam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nhemVu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nhiemVu;
     }
 }
 

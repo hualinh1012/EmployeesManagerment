@@ -68,7 +68,6 @@ namespace GUI
             dtpNgayKT.DataBindings.Add("Text", dgvDuAn.DataSource, "ngayKetThuc");
             txtMaPB_DA.DataBindings.Clear();
             txtMaPB_DA.DataBindings.Add("Text", dgvDuAn.DataSource, "maPB");
-            showThamgia();
         }
 
         
@@ -181,12 +180,26 @@ namespace GUI
         }
         
 
-        public void showThamgia()
+        /// <summary>
+        /// THAM GIA
+        /// </summary>
+        /// <param name="maduan"></param>
+        public void showThamgia(int maduan)
         {
-            int maduan = Convert.ToInt32(txtMaDuAn.Text);
             dgvNV_DA.DataSource = tblThamgia_BUS.loadThamgia(maduan);
         }
 
+        public void buidingTham_gia()
+        {
+            txtMANV_DA.DataBindings.Clear();
+            txtMANV_DA.DataBindings.Add("Text", dgvNV_DA.DataSource, "maDA");
+            txtNV_DA.DataBindings.Clear();
+            txtNV_DA.DataBindings.Add("Text", dgvNV_DA.DataSource, "nhiemVu");
+            txtTenNV_DA.DataBindings.Clear();
+            txtTenNV_DA.DataBindings.Add("Text", dgvNV_DA.DataSource, "maNV");
+            txtSogio_DA.DataBindings.Clear();
+            txtSogio_DA.DataBindings.Add("Text", dgvNV_DA.DataSource, "soGioLam");
+        }
         private void btnThem_NVDA_Click(object sender, EventArgs e)
         {
 
@@ -209,5 +222,12 @@ namespace GUI
             
         }
 
+        private void dgvDuAn_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int maduan=Convert.ToInt32(dgvDuAn.Rows[e.RowIndex].Cells[0].Value);
+            MessageBox.Show(dgvDuAn.Rows[e.RowIndex].Cells[0].Value.ToString());
+            showThamgia(maduan);
+            buidingTham_gia();
+        }
     }
 }
