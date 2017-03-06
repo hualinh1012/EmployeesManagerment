@@ -222,10 +222,11 @@ namespace GUI
             
         }
 
-        private void dgvDuAn_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvDuAn_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int maduan=Convert.ToInt32(dgvDuAn.Rows[e.RowIndex].Cells[0].Value);
-            MessageBox.Show(dgvDuAn.Rows[e.RowIndex].Cells[0].Value.ToString());
+            int maduan=Convert.ToInt32(dgvDuAn.Rows[e.RowIndex].Cells[0].Value.ToString());
+            MessageBox.Show(dgvDuAn.CurrentRow.Index.ToString());
+            int maduan1 = Convert.ToInt32(txtMaDuAn.Text);
             showThamgia(maduan);
             buidingTham_gia();
         }

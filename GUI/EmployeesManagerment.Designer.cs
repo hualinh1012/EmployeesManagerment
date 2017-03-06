@@ -970,7 +970,7 @@
             this.dgvDuAn.ReadOnly = true;
             this.dgvDuAn.Size = new System.Drawing.Size(466, 214);
             this.dgvDuAn.TabIndex = 0;
-            this.dgvDuAn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDuAn_CellContentClick);
+            this.dgvDuAn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDuAn_CellClick);
             // 
             // Maduan
             // 
