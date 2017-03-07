@@ -12,7 +12,7 @@ namespace BUS
     {
         public static DataTable loadThamgia(int maduan)
         {
-            return tblDuAn_DAL.getThamGia(maduan);
+            return tblThamGia_DAL.getThamGia(maduan);
         }
     }
 }

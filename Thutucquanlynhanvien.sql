@@ -1,3 +1,4 @@
+
 CREATE PROC XEM_DU_AN
 AS
 BEGIN
@@ -50,4 +51,10 @@ BEGIN
 SELECT* FROM ThamGia WHERE maDA=@MA_DA
 END
 XEM_THAM_GIA 1
+
+create proc GET_EMPL_NAME (@MA_NV int) as
+begin
+select TenNV from NhanVien
+where maNV = @MA_NV
+end
 

@@ -192,11 +192,12 @@ namespace GUI
         public void buidingTham_gia()
         {
             txtMANV_DA.DataBindings.Clear();
-            txtMANV_DA.DataBindings.Add("Text", dgvNV_DA.DataSource, "maDA");
+            txtMANV_DA.DataBindings.Add("Text", dgvNV_DA.DataSource, "maNV");
             txtNV_DA.DataBindings.Clear();
             txtNV_DA.DataBindings.Add("Text", dgvNV_DA.DataSource, "nhiemVu");
             txtTenNV_DA.DataBindings.Clear();
-            txtTenNV_DA.DataBindings.Add("Text", dgvNV_DA.DataSource, "maNV");
+            String TenNV = tblNhanVien_BUS.getEmplName(Int32.Parse(txtMANV_DA.Text));
+            txtTenNV_DA.Text = TenNV;
             txtSogio_DA.DataBindings.Clear();
             txtSogio_DA.DataBindings.Add("Text", dgvNV_DA.DataSource, "soGioLam");
         }
@@ -221,11 +222,10 @@ namespace GUI
             buidingDu_An();
             
         }
-
-        private void dgvDuAn_CellClick(object sender, DataGridViewCellEventArgs e)
+        
+        private void dgvDuAn_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            int maduan=Convert.ToInt32(dgvDuAn.Rows[e.RowIndex].Cells[0].Value.ToString());
-            MessageBox.Show(dgvDuAn.CurrentRow.Index.ToString());
+            int maduan = Convert.ToInt32(dgvDuAn.Rows[e.RowIndex].Cells[0].Value.ToString());
             int maduan1 = Convert.ToInt32(txtMaDuAn.Text);
             showThamgia(maduan);
             buidingTham_gia();

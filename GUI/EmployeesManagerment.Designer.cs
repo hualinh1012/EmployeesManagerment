@@ -107,6 +107,10 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dgvNV_DA = new System.Windows.Forms.DataGridView();
+            this.maNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soGioLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhiemVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvDuAn = new System.Windows.Forms.DataGridView();
             this.Maduan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -158,10 +162,6 @@
             this.allDayOffLeaveTable = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.emplDayOffStaticTable = new System.Windows.Forms.DataGridView();
-            this.maNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soGioLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nhiemVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.emplTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -792,17 +792,17 @@
             // 
             // dtpNgayKT
             // 
-            this.dtpNgayKT.Location = new System.Drawing.Point(80, 134);
+            this.dtpNgayKT.Location = new System.Drawing.Point(128, 134);
             this.dtpNgayKT.Name = "dtpNgayKT";
-            this.dtpNgayKT.Size = new System.Drawing.Size(200, 20);
+            this.dtpNgayKT.Size = new System.Drawing.Size(125, 20);
             this.dtpNgayKT.TabIndex = 16;
             this.dtpNgayKT.ValueChanged += new System.EventHandler(this.dtpNgayKT_ValueChanged);
             // 
             // dtpNgayBD
             // 
-            this.dtpNgayBD.Location = new System.Drawing.Point(80, 109);
+            this.dtpNgayBD.Location = new System.Drawing.Point(128, 108);
             this.dtpNgayBD.Name = "dtpNgayBD";
-            this.dtpNgayBD.Size = new System.Drawing.Size(200, 20);
+            this.dtpNgayBD.Size = new System.Drawing.Size(125, 20);
             this.dtpNgayBD.TabIndex = 15;
             // 
             // btnSua_Duan
@@ -838,7 +838,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(22, 163);
+            this.label26.Location = new System.Drawing.Point(26, 163);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(59, 13);
             this.label26.TabIndex = 11;
@@ -855,7 +855,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(2, 134);
+            this.label25.Location = new System.Drawing.Point(26, 140);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(74, 13);
             this.label25.TabIndex = 9;
@@ -864,7 +864,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(2, 109);
+            this.label24.Location = new System.Drawing.Point(26, 114);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(72, 13);
             this.label24.TabIndex = 8;
@@ -873,7 +873,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(22, 82);
+            this.label23.Location = new System.Drawing.Point(26, 82);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(49, 13);
             this.label23.TabIndex = 7;
@@ -882,7 +882,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(22, 55);
+            this.label22.Location = new System.Drawing.Point(26, 55);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(56, 13);
             this.label22.TabIndex = 6;
@@ -891,7 +891,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(22, 29);
+            this.label21.Location = new System.Drawing.Point(26, 29);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(52, 13);
             this.label21.TabIndex = 5;
@@ -953,6 +953,34 @@
             this.dgvNV_DA.Size = new System.Drawing.Size(466, 194);
             this.dgvNV_DA.TabIndex = 1;
             // 
+            // maNV
+            // 
+            this.maNV.DataPropertyName = "maNV";
+            this.maNV.HeaderText = "Ma NV";
+            this.maNV.Name = "maNV";
+            this.maNV.ReadOnly = true;
+            // 
+            // maDA
+            // 
+            this.maDA.DataPropertyName = "maDA";
+            this.maDA.HeaderText = "Ma DA";
+            this.maDA.Name = "maDA";
+            this.maDA.ReadOnly = true;
+            // 
+            // soGioLam
+            // 
+            this.soGioLam.DataPropertyName = "soGioLam";
+            this.soGioLam.HeaderText = "So Gio";
+            this.soGioLam.Name = "soGioLam";
+            this.soGioLam.ReadOnly = true;
+            // 
+            // nhiemVu
+            // 
+            this.nhiemVu.DataPropertyName = "nhiemVu";
+            this.nhiemVu.HeaderText = "Nhiem Vu";
+            this.nhiemVu.Name = "nhiemVu";
+            this.nhiemVu.ReadOnly = true;
+            // 
             // dgvDuAn
             // 
             this.dgvDuAn.AllowUserToAddRows = false;
@@ -970,7 +998,7 @@
             this.dgvDuAn.ReadOnly = true;
             this.dgvDuAn.Size = new System.Drawing.Size(466, 214);
             this.dgvDuAn.TabIndex = 0;
-            this.dgvDuAn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDuAn_CellClick);
+            this.dgvDuAn.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvDuAn_CellMouseClick);
             // 
             // Maduan
             // 
@@ -1429,34 +1457,6 @@
             this.emplDayOffStaticTable.Name = "emplDayOffStaticTable";
             this.emplDayOffStaticTable.Size = new System.Drawing.Size(480, 424);
             this.emplDayOffStaticTable.TabIndex = 0;
-            // 
-            // maNV
-            // 
-            this.maNV.DataPropertyName = "maNV";
-            this.maNV.HeaderText = "Ma NV";
-            this.maNV.Name = "maNV";
-            this.maNV.ReadOnly = true;
-            // 
-            // maDA
-            // 
-            this.maDA.DataPropertyName = "maDA";
-            this.maDA.HeaderText = "Ma DA";
-            this.maDA.Name = "maDA";
-            this.maDA.ReadOnly = true;
-            // 
-            // soGioLam
-            // 
-            this.soGioLam.DataPropertyName = "soGioLam";
-            this.soGioLam.HeaderText = "So Gio";
-            this.soGioLam.Name = "soGioLam";
-            this.soGioLam.ReadOnly = true;
-            // 
-            // nhiemVu
-            // 
-            this.nhiemVu.DataPropertyName = "nhiemVu";
-            this.nhiemVu.HeaderText = "Nhiem Vu";
-            this.nhiemVu.Name = "nhiemVu";
-            this.nhiemVu.ReadOnly = true;
             // 
             // EmployeesManagerment
             // 
